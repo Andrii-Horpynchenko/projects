@@ -1,0 +1,11 @@
+cd Desktop/projects/Data_info/Meteo			#Переход в рабочую папку
+source env/bin/activate					#Активирование окружения
+python -c "import flask; print(flask.__version__)"	#Просмотр версии flask
+							#Готовим файл запуска Server.py
+
+export FLASK_APP=Server			#Указывает где искать файл
+export FLASK_ENV=Server			#Запуск в режиме разработки
+flask run				#Запуск файла с помощью flask
+
+CTRL+C   				#Остановка сервера
+flask run -p 5020			#Запуск сервера на другом порте
